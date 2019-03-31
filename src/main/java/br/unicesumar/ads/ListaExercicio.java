@@ -38,7 +38,9 @@ public class ListaExercicio
         ListaExercicios.add(new Exercicio3a());
 
         for (InterfaceExercicio exercicio : ListaExercicios) {
+            System.out.println("Executando classe: " + exercicio.getClass().getSimpleName());
             System.out.println(exercicio.run());
+            System.out.println("\n");
         }
     }
 }
