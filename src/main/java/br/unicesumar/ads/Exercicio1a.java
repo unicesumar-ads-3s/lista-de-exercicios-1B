@@ -14,7 +14,7 @@ public class Exercicio1a implements InterfaceExercicio {
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package exercicio;
+	package exercicio;
 import java.util.Scanner;
 /**
  *
@@ -42,6 +42,10 @@ System.out.print("Distancia Percorrida = " + Distancia + " Km\n");
 System.out.print("Quantidade de Combustível utilizado: " + LitrosUsados + " litros\n");
 }
 }   // TODO code application logic here
+   
+   
+}
+
    
    
 }
