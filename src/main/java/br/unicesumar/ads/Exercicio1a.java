@@ -10,7 +10,7 @@ public class Exercicio1a implements InterfaceExercicio {
         // Caso o resultado seja um valor numérico, o valor deve
         // ser convertido em String.
 
-
+lkjhkj
 
 
         String resultado = "Código não implementado";
