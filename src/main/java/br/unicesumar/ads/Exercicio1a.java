@@ -8,22 +8,22 @@ public class Exercicio1a implements InterfaceExercicio {
      
         double VeloMe;
         double TempGasto;
-        double aut12;
+        double aut12;//declara variaveis
         double distancia;
         double litUsados;
         aut12=12;
         
         
-        Scanner teclado=new Scanner(System.in);
+        Scanner teclado=new Scanner(System.in);//instancia entrada teclado
         System.out.println("entre com o  tempo gasto ");
-         TempGasto= teclado.nextDouble();
+         TempGasto= teclado.nextDouble();//entra com novo valor de tempo
         System.out.println("entre com a velocidade media ");
-        VeloMe= teclado.nextDouble();
+        VeloMe= teclado.nextDouble();//le a velocidade media
         
-        distancia=VeloMe*TempGasto;
+        distancia=VeloMe*TempGasto;//faz calculo distancia
         
         
-        litUsados=distancia/aut12;
+        litUsados=distancia/aut12;//faz calculos  de litros usados 
         System.out.println("a distancia percorrida e "+distancia);
         System.out.println("O total de litros usados "+litUsados);
 
@@ -31,7 +31,7 @@ public class Exercicio1a implements InterfaceExercicio {
 
 
 
-String str = Double.toString(litUsados);
+String str = Double.toString(litUsados);//converte de double para string
 String stri = Double.toString(distancia);
 
 
