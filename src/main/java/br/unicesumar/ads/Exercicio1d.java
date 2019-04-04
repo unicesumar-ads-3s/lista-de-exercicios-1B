@@ -9,11 +9,21 @@ public class Exercicio1d implements InterfaceExercicio {
         // O método deve retornar uma string
         // Caso o resultado seja um valor numérico, o valor deve
         // ser convertido em String.
+        Scanner teclado = new Scanner(System.in);
+
+        float K, C;
+
+        System.out.println(" Digite a sua temperatura em graus Celsius ");
+        C = teclado.nextFloat();
+        K = (float) (C + 273.15);
+
+        String strK = String.format("%.2f",K);
+
+        System.out.println("Kelvin "+strK);
 
 
 
-
-        String resultado = "Código não implementado";
-        return resultado;
+        String strK = "A sua temperatura em graus Kelvin é ";
+        return strK;
     }
 }

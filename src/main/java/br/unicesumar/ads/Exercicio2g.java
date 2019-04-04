@@ -9,11 +9,19 @@ public class Exercicio2g implements InterfaceExercicio {
         // O método deve retornar uma string
         // Caso o resultado seja um valor numérico, o valor deve
         // ser convertido em String.
+        Scanner teclado = new Scanner(System.in);
 
+        int num;
 
+        System.out.println("Este programa ira verificar se o numero que voce digitou está entre 1 e 9");
+        System.out.println("Digite um numero qualquer:");
+        num = teclado.nextInt();
 
+        if((num>=1)&&(num<=9)){
+            System.out.println("O valor está na faixa permitida");
+        }else{
+            System.out.println("O valor está fora da faixa permitida");
+        }
 
-        String resultado = "Código não implementado";
-        return resultado;
     }
 }
