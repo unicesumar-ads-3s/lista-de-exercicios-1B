@@ -9,7 +9,7 @@ public class Exercicio1a implements InterfaceExercicio {
         // O método deve retornar uma string
         // Caso o resultado seja um valor numérico, o valor deve
         // ser convertido em String.
-
+HGJYRTUKYRU
 
 
 
