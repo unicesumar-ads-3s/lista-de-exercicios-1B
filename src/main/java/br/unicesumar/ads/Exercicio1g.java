@@ -5,15 +5,23 @@ import java.util.Scanner;
 public class Exercicio1g implements InterfaceExercicio {
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+       float raio, area, volume;
+        
+        Scanner teclado = new Scanner(System.in);
+        System.out.println(" CALCULAR VOLUME ");
+        System.out.println(" Informe o Raio do cilindro:");
+        raio = teclado.nextFloat();
+        System.out.println(" Informe a Área do cilindro:");
+        area = teclado.nextFloat();
+        
+        volume = (float) (Math.PI /(2*area));
+        String strV = String.format("%.2f", volume);
 
-
-
-
-        String resultado = "Código não implementado";
+        /* 
+        Resultado apresentado é o volume do cilindro conforme os valores 
+        de raio e volume apresentados pelo usuário.
+        */
+        String resultado = "Volume do Galão é "+strV;
         return resultado;
     }
 }
