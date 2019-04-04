@@ -16,28 +16,22 @@ public class Exercicio2f implements InterfaceExercicio {
         n3 = teclado.nextInt();
         System.out.println("Quarto número: ");
         n4 = teclado.nextInt();
-        String resultado;
+        
         if((n1%2==0)||(n1%3==0)){
-             resultado = n1+ " Divisivel por 2 ou 3";
             System.out.println(n1+ " Divisivel por 2 ou 3");
         }
         else if((n2%2==0)||(n2%3==0)){
-             resultado = n2+ " Divisivel por 2 ou 3";
             System.out.println(n2+ " Divisivel por 2 ou 3");
         }
         else if((n3%2==0)||(n3%3==0)){
-             resultado = n3+ " Divisivel por 2 ou 3";
             System.out.println(n3+ " Divisivel por 2 ou 3");
         }
         else if((n4%2==0)||(n4%3==0)){
-             resultado = n4+ " Divisivel por 2 ou 3";
             System.out.println(n4+ " Divisivel por 2 ou 3");
         }
         else {
-            resultado = "Esse número não é divisivel por 2 ou 3";
             System.out.println("Esse número não é divisivel por 2 ou 3");
         }
-        return resultado;
 
           }
 }
