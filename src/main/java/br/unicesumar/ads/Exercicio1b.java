@@ -9,11 +9,15 @@ public class Exercicio1b implements InterfaceExercicio {
         // O método deve retornar uma string
         // Caso o resultado seja um valor numérico, o valor deve
         // ser convertido em String.
+        Scanner valor = new Scanner(System.in);
+        int C, F;
+            
+		System.out.print("Digite temperatura em graus Celsius: ");
+		C = valor.nextDouble();
+		
+		F = ( 9 * C + 160 ) / 5
 
-
-
-
-        String resultado = "Código não implementado";
+        String resultado = "Em graus Fahrenheit é" + F;
         return resultado;
     }
 }
