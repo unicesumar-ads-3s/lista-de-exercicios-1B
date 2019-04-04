@@ -27,7 +27,7 @@ public class Exercicio2 {
         Scanner entrada = new Scanner(System.in);
 		double Celsius, Fahrenheit;
 
-		System.out.print("Conversor de temperatura: Graus Celsios -> Fahrenheit\n\n");
+		System.out.print("Conversor de temperatura: Graus Celsius -> Fahrenheit\n\n");
 		
 		
 		System.out.print("Digite a temperatura em Celsius: ");
