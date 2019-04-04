@@ -5,14 +5,22 @@ import java.util.Scanner;
 public class Exercicio2i implements InterfaceExercicio {
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
-
-
-
-        String resultado = "Código não implementado";
+        int n;
+        Scanner teclado = new Scanner (System.in);
+        System.out.println(" PAR OU IMPAR ");
+        System.out.println("Informe um número: ");
+        n = teclado.nextInt();
+        String resultado;
+        if(n%2==0){
+             resultado = "PAR";
+            System.out.println("PAR");
+            
+        }
+        else{
+             resultado = "IMPAR";
+            System.out.println("IMPAR");
+             
+        }
         return resultado;
     }
 }
