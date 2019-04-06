@@ -19,5 +19,6 @@ public class Exercicio2b implements InterfaceExercicio {
             n = n * (-1);
             System.out.println(" "+n);
         }
+        return null;
     }
 }
