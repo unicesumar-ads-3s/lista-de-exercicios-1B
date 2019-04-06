@@ -32,6 +32,6 @@ public class Exercicio2f implements InterfaceExercicio {
         else {
             System.out.println("Esse número não é divisivel por 2 ou 3");
         }
-
-          }
+        return null;
+     }
 }
