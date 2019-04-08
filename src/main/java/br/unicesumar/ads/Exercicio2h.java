@@ -1,19 +1,36 @@
-package br.unicesumar.ads;
+﻿package br.unicesumar.ads;
 
 import java.util.Scanner;
 
 public class Exercicio2h implements InterfaceExercicio {
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+        
+      	Scanner teclado = new Scanner (System.in);
+		int valor[] = new int[4];
+		int maior = 0;
+                int menor = 0; 
+                
+		for(int i = 0; i < valor.length; i++){
+			System.out.print("Digite o " +(i+1)+"º valor: ");
+			valor[i] = teclado.nextInt();
+			if(valor[i] > maior){ 
+				maior = valor[i];
+			}
+		}
+		for (int j = 0; j < valor.length; j++) {
+			if(valor[j] < menor){
+				menor = valor[j];
+			}
+		}
+		
+	
 
 
 
 
-        String resultado = "Código não implementado";
+        String resultado = "o maior valor e "+maior+" o menor valor e "+menor;
         return resultado;
+    
     }
 }

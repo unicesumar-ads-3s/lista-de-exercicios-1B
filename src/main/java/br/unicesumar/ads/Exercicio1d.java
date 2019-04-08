@@ -1,19 +1,24 @@
-package br.unicesumar.ads;
+﻿package br.unicesumar.ads;
 
 import java.util.Scanner;
 
 public class Exercicio1d implements InterfaceExercicio {
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+        
+        float  GCel;
+        float GKel;
+        
+        Scanner teclado=new Scanner(System.in);//instancia o método scanner
+        System.out.println("digite um valor em Graus Celsius");
+        GCel=teclado.nextFloat();//a variavel e m questao recebe um novo valor digitado de Celsius
+        
+        GKel=(float) (GCel+273.15); //aqui faz o calculo , onde Graus Kelvin recebe o valor convertido de graus Celsius para Kelvin
 
 
 
 
-        String resultado = "Código não implementado";
+        String resultado = "O resultado em Kelvin é"+GKel;
         return resultado;
     }
 }
