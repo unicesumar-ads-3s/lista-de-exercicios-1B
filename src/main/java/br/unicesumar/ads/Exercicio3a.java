@@ -1,4 +1,4 @@
-package br.unicesumar.ads;
+﻿package br.unicesumar.ads;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class Exercicio3a implements InterfaceExercicio {
 
 
 
-        String resultado = "Código não implementado";
+        String resultado = "nao consegui entendet por enquanto";
         return resultado;
     }
 }

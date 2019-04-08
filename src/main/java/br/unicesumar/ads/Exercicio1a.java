@@ -5,38 +5,35 @@ import java.util.Scanner;
 public class Exercicio1a implements InterfaceExercicio {
     @Override
     public String run() {
-     
-        double VeloMe;
-        double TempGasto;
-        double aut12;//declara variaveis
-        double distancia;
-        double litUsados;
-        aut12=12;
+        final int kmc12=12;//defini uma constante aqui pois o valor 12 nao muda
+        float TempGasto;//declaração geral de variáveis
+        float VeloMedia;
+        float DistPerco;
+        float LitUsados;
+        
+        Scanner teclado=new Scanner(System.in);//instancia o método scanner
+        
+        System.out.println("digite o tempo gasto de viagem");
+        TempGasto=teclado.nextFloat();//a variavel e m questao recebe um novo valor digitado
+        System.out.println("digite a velocidade media da viagem");
+        VeloMedia=teclado.nextFloat();//a variavel e m questao recebe um novo valor digitado
+        
+        DistPerco=TempGasto*VeloMedia;//aqui faz o calculo da distancia
+        
+        LitUsados=DistPerco/kmc12;// aqui faz o calculo dos litros usados
         
         
-        Scanner teclado=new Scanner(System.in);//instancia entrada teclado
-        System.out.println("entre com o  tempo gasto ");
-         TempGasto= teclado.nextDouble();//entra com novo valor de tempo
-        System.out.println("entre com a velocidade media ");
-        VeloMe= teclado.nextDouble();//le a velocidade media
-        
-        distancia=VeloMe*TempGasto;//faz calculo distancia
         
         
-        litUsados=distancia/aut12;//faz calculos  de litros usados 
-        System.out.println("a distancia percorrida e "+distancia);
-        System.out.println("O total de litros usados "+litUsados);
+        
+        
+        
+        
 
 
 
-
-
-String str = Double.toString(litUsados);//converte de double para string
-String stri = Double.toString(distancia);
-
-
-
-        String resultado = "Litros usados: " + litUsados + " Distancia: " + distancia;
+ 
+        String resultado ="A velocidade media e \n"+VeloMedia+ "\nO tempo Gasto foi \n"+TempGasto+"\nA distancia Percorrida foi de\n"+DistPerco+"\nA quantidade de litros usados foi \n"+LitUsados;
         return resultado;
     }
 }
