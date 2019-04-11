@@ -23,6 +23,7 @@ public class Exercicio2i implements InterfaceExercicio {
         }else{
             System.out.println("o numero "+strnum+" é impar");
         }
+        return strnum;
 
     }
 }
