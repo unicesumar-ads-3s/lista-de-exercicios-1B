@@ -8,7 +8,7 @@ public class Exercicio1a implements InterfaceExercicio {
     double distance;
     
     public double dist(Integer duration, Integer speed) {
-        double distancia = this.duration * this.speed;
+        double distancia = duration * speed;
         return distancia;
     }
     
@@ -26,16 +26,15 @@ public class Exercicio1a implements InterfaceExercicio {
         // ser convertido em String.
         
         Scanner scanner = new Scanner(System.in);
-        Exercicio1a app = new Exercicio1a();
         
         System.out.println("Qual foi a duracao?");
-        app.duration = scanner.nextInt();
+        this.duration = scanner.nextInt();
         System.out.println("Qual foi a velocidade media?");
-        app.speed = scanner.nextInt();
+        this.speed = scanner.nextInt();
         
-        app.distance = app.dist(app.duration, app.speed);
+        this.distance = this.dist(this.duration, this.speed);
         
 
-        return "Litros Usados " + app.litrosUsados(app.distance);
+        return "Litros Usados " + this.litrosUsados(this.distance);
     }
 }
