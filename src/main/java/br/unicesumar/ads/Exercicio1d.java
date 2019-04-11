@@ -10,10 +10,16 @@ public class Exercicio1d implements InterfaceExercicio {
         // Caso o resultado seja um valor numérico, o valor deve
         // ser convertido em String.
 
+     Scanner valor = new Scanner(System.in); 
+	 int C, K;
+
+		System.out.print("Digite temperatura em graus Celsius: ");
+		C = valor.nextInt(); //Ler uma temperatura em graus Celsius 
+
+		K = C + 273.15; //convertida em graus Kelvin
 
 
-
-        String resultado = "Código não implementado";
+        String resultado = "Em graus Kelvin é" + K;
         return resultado;
     }
 }
