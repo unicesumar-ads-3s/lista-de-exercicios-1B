@@ -10,16 +10,15 @@ public class Exercicio1e implements InterfaceExercicio {
         // Caso o resultado seja um valor numérico, o valor deve
         // ser convertido em String.
 
-        import java.util.Scanner;
+        
 
-public class Exercicio{
 
-	public static void main(String[] args) {
+	
 
 		Scanner entrada = new Scanner(System.in);
 		double Celsius, Fahrenheit, Kelvin;
 
-		System.out.print("Conversor de temperatura: Graus Fahrenheit -> Graus Celsius\n\n"); 
+		System.out.print("Conversor de temperatura: Graus Fahrenheit -> Graus Kelvin\n\n"); 
 		
 		
 		System.out.print("Digite a temperatura em Fahrenheit: ");
@@ -28,15 +27,9 @@ public class Exercicio{
              Celsius = (Fahrenheit - 32 ) * 5 / 9;
 
             Kelvin = (Celsius + 273.15 );
-             System.out.print("\n A medida convertida � " + Kelvin + "�C\n");
+             System.out.print("\n A medida convertida é " + Kelvin + "ºK\n");
+             return "\n A medida convertida é " + Kelvin + "ºK\n";
 		
 	}
 
-}
-
-
-
-        String resultado = "Código não implementado";
-        return resultado;
-    }
 }
