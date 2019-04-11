@@ -3,17 +3,26 @@ package br.unicesumar.ads;
 import java.util.Scanner;
 
 public class Exercicio2b implements InterfaceExercicio {
+    static int num1;
+    static String resultado;
+    Scanner scanf = new Scanner(System.in);
+
+    public Exercicio2b() {
+    }
+    
+    
+    
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+        System.out.println("Digite um numero: ");
+        num1 = scanf.nextInt();
 
-
-
-
-        String resultado = "Código não implementado";
+        if(num1 > 0){
+            resultado = "O numero "+num1+" é positivo";
+        }else{
+            resultado = "O numero "+num1+", convertido para positivo fica: "+num1*-1;
+        }
+        
         return resultado;
     }
 }

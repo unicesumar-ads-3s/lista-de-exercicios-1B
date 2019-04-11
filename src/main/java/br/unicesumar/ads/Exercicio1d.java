@@ -3,17 +3,26 @@ package br.unicesumar.ads;
 import java.util.Scanner;
 
 public class Exercicio1d implements InterfaceExercicio {
+     public static float celsius;
+     public static float kelvin;
+     Scanner scanf = new Scanner(System.in);
+
+    public Exercicio1d() {
+    }
+     
+     
+    
+    
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+        System.out.println("Digite a Temperatura em Celsius: ");
+        this.celsius = scanf.nextFloat();
+        this.kelvin = (this.celsius + 273.15f);
 
 
 
 
-        String resultado = "Código não implementado";
+        String resultado = "Temperatura Celsius: "+this.celsius+" Temperatura Kelvin: "+this.kelvin;
         return resultado;
     }
 }
