@@ -10,12 +10,10 @@ public class Exercicio1e implements InterfaceExercicio {
         // Caso o resultado seja um valor numérico, o valor deve
         // ser convertido em String.
 
-        package exercicioEE;
-        import java.util.Scanner;
+        
 
-public class Exercicio{
 
-	public static void main(String[] args) {
+	
 
 		Scanner entrada = new Scanner(System.in);
 		double Celsius, Fahrenheit, Kelvin;
@@ -29,14 +27,10 @@ public class Exercicio{
              Celsius = (Fahrenheit - 32 ) * 5 / 9;
 
             Kelvin = (Celsius + 273.15 );
-             System.out.print("\n A medida convertida é " + Kelvin + "ºC\n");
+             System.out.print("\n A medida convertida é " + Kelvin + "ºK\n");
+             return "\n A medida convertida é " + Kelvin + "ºK\n";
 		
 	}
 
 }
 
-
-        String resultado = "Código não implementado";
-        return resultado;
-    }
-}

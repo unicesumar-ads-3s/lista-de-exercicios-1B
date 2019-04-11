@@ -10,20 +10,11 @@ public class Exercicio1b implements InterfaceExercicio {
         // Caso o resultado seja um valor numérico, o valor deve
         // ser convertido em String.
 
-        package exercicio2;
+        
 
-import java.util.Scanner;
 
-/**
- *
- * @author UniCesumar
- */
-public class Exercicio2 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+    
         Scanner entrada = new Scanner(System.in);
 		double Celsius, Fahrenheit;
 
@@ -36,17 +27,10 @@ public class Exercicio2 {
 		Fahrenheit = ( 9 * Celsius + 160 ) / 5;
 
 		System.out.print("\n A medida convertida é " + Fahrenheit + "ºF\n");
+                return "\n A medida convertida é " + Fahrenheit + "ºF\n";
 		
 	}
 
 }
     
     
-}
-
-
-
-        String resultado = "Código não implementado";
-        return resultado;
-    }
-}
