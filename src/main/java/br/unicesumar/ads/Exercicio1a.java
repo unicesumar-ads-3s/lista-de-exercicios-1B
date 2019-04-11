@@ -5,17 +5,16 @@ import java.util.Scanner;
 public class Exercicio1a implements InterfaceExercicio {
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
+        Scanner in = new Scanner(System.in);
+        System.out.print("Tempo gasto na viagem: ");
+        int temp = in.nextInt();
+        System.out.print("Velocidade Media: ");
+        int velocidade = in.nextInt();
 
-        
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+        int dist = temp * velocidade;
+        int litros_usados = dist/12;
 
-
-
-
-        String resultado = "Código não implementado";
+        String resultado = "A quantidade de litros utilizada é " + litros_usados + "L";
         return resultado;
     }
 }

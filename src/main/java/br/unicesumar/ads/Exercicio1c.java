@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Exercicio1c implements InterfaceExercicio {
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
 
+        Scanner in = new Scanner(System.in);
+        System.out.print("Graus Fahrenheit: ");
+        int F = in.nextInt();
 
+        int C = ((F - 32) * 5) / 9;
 
+        String resultado = "Celsius é " + C;
 
-        String resultado = "Código não implementado";
         return resultado;
     }
 }
