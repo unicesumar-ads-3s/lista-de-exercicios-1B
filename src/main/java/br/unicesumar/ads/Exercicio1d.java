@@ -5,15 +5,15 @@ import java.util.Scanner;
 public class Exercicio1d implements InterfaceExercicio {
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+        double c = 0;
+        double k = 0;
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digte uma temperatura em Celsius: ");         
+        c = ler.nextDouble();
+        k = c + 273.15;
+        //System.out.println("Temperatura em kelvin: " + k);
 
-
-
-
-        String resultado = "Código não implementado";
+        String resultado = "Temperatura em kelvin: " + k;
         return resultado;
     }
 }

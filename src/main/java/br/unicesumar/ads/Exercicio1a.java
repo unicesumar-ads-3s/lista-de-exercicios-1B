@@ -19,10 +19,13 @@ public class Exercicio1a implements InterfaceExercicio {
         vel = ler.nextInt();
         distancia = tempo * vel;
         litros_usados = distancia / 12;
-        System.out.println("velocidade media: " + vel);
+        /*System.out.println("velocidade media: " + vel);
         System.out.println("Tempo gasto: " + tempo);
         System.out.println("Distancia percorrida: " + distancia);
-        System.out.println("Quantidade de litros usados: " + litros_usados);
+        System.out.println("Quantidade de litros usados: " + litros_usados);*/
+        
+        String resultado = "velocidade media: " + vel + "\nTempo gasto: " + tempo + "\nDistancia percorrida: " + distancia + "\nQuantidade de litros usados: " + litros_usados;
+        return resultado;
 
         
     }
