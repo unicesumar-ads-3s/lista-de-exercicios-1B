@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Exercicio1g implements InterfaceExercicio {
     @Override
+    double volume;
+    
     public String run() {
         // Aqui vai a implementação do exercicio
         // O método deve retornar uma string

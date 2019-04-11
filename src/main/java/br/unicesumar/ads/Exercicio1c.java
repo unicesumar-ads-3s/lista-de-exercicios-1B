@@ -3,17 +3,19 @@ package br.unicesumar.ads;
 import java.util.Scanner;
 
 public class Exercicio1c implements InterfaceExercicio {
-    @Override
+  double celcius;
+  double fahrenheit;
+
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+      Scanner scan = new Scanner(System.in);
 
+      fahrenheit = scan.nextDouble();
 
-
-
-        String resultado = "Código não implementado";
-        return resultado;
+      convertTemp(fahrenheit);
+    }
+    public double convertTemp(fahrenheit){
+      celcius  = ((fahrenheit -32)*5)/5;
+        System.out.printLn(celcius)
+                return celcius;
     }
 }
