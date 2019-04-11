@@ -9,11 +9,15 @@ public class Exercicio1d implements InterfaceExercicio {
         // O método deve retornar uma string
         // Caso o resultado seja um valor numérico, o valor deve
         // ser convertido em String.
+    Scanner in = new Scanner(System.in);
+        System.out.print("Entre com a temperatura em Celsius: ");
+        double celsius = in.nextInt();
+        
+        Double K = celsius+273.15;
 
-
-
-
-        String resultado = "Código não implementado";
+        String resultado = "A temperatura em Kelvin é: " + K;
         return resultado;
+
+
     }
 }
