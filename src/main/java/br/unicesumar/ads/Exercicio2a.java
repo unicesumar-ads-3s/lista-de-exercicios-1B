@@ -5,15 +5,24 @@ import java.util.Scanner;
 public class Exercicio2a implements InterfaceExercicio {
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+        Scanner in = new Scanner(System.in);
+        System.out.print("Insira numero 1: ");
+        int N1 = in.nextInt();
+
+        System.out.print("Insira numero 2: ");
+        int N2 = in.nextInt();
+        int VALOR = 0;
 
 
+        if (N1>N2){
+            VALOR = N1-N2;
+        }
+        else{
+            VALOR = N2-N1;
+        }
 
+        String resultado = "A diferença é de  " + VALOR;
 
-        String resultado = "Código não implementado";
         return resultado;
     }
 }

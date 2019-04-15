@@ -5,15 +5,36 @@ import java.util.Scanner;
 public class Exercicio2d implements InterfaceExercicio {
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+        Scanner in = new Scanner(System.in);
+        System.out.print("Numero 1: ");
+        int n1 = in.nextInt();
+
+        System.out.print("Numero 2: ");
+        int n2 = in.nextInt();
+
+        System.out.print("Numero 3: ");
+        int n3 = in.nextInt();
 
 
-
-
-        String resultado = "Código não implementado";
+        String resultado = "";
+        if((n1 < n2 && n1 < n3)){
+            if(n2 < n3)
+                resultado += n1 + " " + n2 + " " + n3;
+            else
+                resultado += n1 + " " + n3 + " " + n2;
+        }
+        else if((n2 < n1 && n2 < n3)){
+            if(n1 < n3)
+                resultado += n2 + " " + n1 + " " + n3;
+            else
+                resultado += n2 + " " + n3 + " " + n1;
+        }
+        else if((n3 < n1 && n3 < n2)){
+            if(n1 < n2)
+                resultado += n3 + " " + n1 + " " + n2;
+            else
+                resultado += n3 + " " + n2 + " " + n1;
+        }
         return resultado;
     }
 }
