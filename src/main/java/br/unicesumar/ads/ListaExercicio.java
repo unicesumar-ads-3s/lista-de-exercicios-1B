@@ -28,10 +28,10 @@ public class ListaExercicio
 //        ListaExercicios.add(new Exercicio2a());
 //        ListaExercicios.add(new Exercicio2b());
 //        ListaExercicios.add(new Exercicio2c());
-        ListaExercicios.add(new Exercicio2d());
+//        ListaExercicios.add(new Exercicio2d());
 //        ListaExercicios.add(new Exercicio2e());
 //        ListaExercicios.add(new Exercicio2f());
-//        ListaExercicios.add(new Exercicio2g());
+        ListaExercicios.add(new Exercicio2g());
 //        ListaExercicios.add(new Exercicio2h());
 //        ListaExercicios.add(new Exercicio2i());
 //

@@ -5,10 +5,25 @@ import java.util.Scanner;
 public class Exercicio2h implements InterfaceExercicio {
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+        Scanner in = new Scanner(System.in);
+        System.out.print("Numero 1: ");
+        int n1 = in.nextInt();
+
+        System.out.print("Numero 2: ");
+        int n2 = in.nextInt();
+
+        System.out.print("Numero 3: ");
+        int n3 = in.nextInt();
+
+        System.out.print("Numero 4: ");
+        int n4 = in.nextInt();
+
+        System.out.print("Numero 5: ");
+        int n5 = in.nextInt();
+
+
+
+
 
 
 
