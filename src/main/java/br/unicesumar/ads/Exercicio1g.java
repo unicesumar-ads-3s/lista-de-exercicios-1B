@@ -1,7 +1,5 @@
 package br.unicesumar.ads;
 
-import java.util.Scanner;
-
 public class Exercicio1g implements InterfaceExercicio {
     @Override
     double volume;

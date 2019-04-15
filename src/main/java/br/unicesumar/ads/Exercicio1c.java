@@ -12,6 +12,7 @@ public class Exercicio1c implements InterfaceExercicio {
       fahrenheit = scan.nextDouble();
 
       convertTemp(fahrenheit);
+      return null;
     }
     public double convertTemp(fahrenheit){
       celcius  = ((fahrenheit -32)*5)/5;

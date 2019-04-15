@@ -1,7 +1,5 @@
 package br.unicesumar.ads;
 
-import java.util.Scanner;
-
 public class Exercicio2g implements InterfaceExercicio {
     @Override
     public String run() {

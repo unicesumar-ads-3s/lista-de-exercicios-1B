@@ -12,6 +12,7 @@ public class Exercicio1b implements InterfaceExercicio {
         celcius = scan.nextDouble();
 
         convertTemp();
+        return null;
     }
 
     public double convertTemp(){

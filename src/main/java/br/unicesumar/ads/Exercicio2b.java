@@ -4,16 +4,24 @@ import java.util.Scanner;
 
 public class Exercicio2b implements InterfaceExercicio {
     @Override
+    private int number;
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+        Scanner  scann = new Scanner(System.in);
+        System.out.println("coloque o valor a ser convertido");
+        number = scann.nextInt();
+        return String.valueOf(getNumber());
+    }
 
+    public int getNumber() {
+        return number;
+    }
 
+    public void setNumber(int number) {
+        if (number<0) {
+            this.number = number * (-1);
+        }else {
+            this.number = number;
+        }
 
-
-        String resultado = "Código não implementado";
-        return resultado;
     }
 }
