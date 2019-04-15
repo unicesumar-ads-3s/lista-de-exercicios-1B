@@ -5,15 +5,29 @@ import java.util.Scanner;
 public class Exercicio2c implements InterfaceExercicio {
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+        Scanner in = new Scanner(System.in);
+        System.out.print("Nota 1: ");
+        double  N1 = in.nextDouble();
+
+        System.out.print("Nota 2: ");
+        double  N2 = in.nextDouble();
+
+        System.out.print("Nota 3: ");
+        double  N3 = in.nextDouble();
+
+        System.out.print("Nota 4: ");
+        double  N4 = in.nextDouble();
+
+        Double MEDIA = (N1+N2+N3+N4)/4;
 
 
-
-
-        String resultado = "Código não implementado";
-        return resultado;
+        if (MEDIA>=6){
+            String resultado = "O aluno foi aprovado com media " + MEDIA;
+            return resultado;
+        }
+        else{
+            String resultado = "O aluno não foi aprovado com media " + MEDIA;
+            return resultado;
+        }
     }
 }
