@@ -6,29 +6,24 @@ public class Exercicio2h implements InterfaceExercicio {
     @Override
     public String run() {
         Scanner in = new Scanner(System.in);
-        System.out.print("Numero 1: ");
-        int n1 = in.nextInt();
+        int n;
+        int maior = 0;
+        int menor = 9999;
 
-        System.out.print("Numero 2: ");
-        int n2 = in.nextInt();
+        for(int i = 1; i < 6; i++) {
+            System.out.print("Numero " + i + ":");
+            n = in.nextInt();
 
-        System.out.print("Numero 3: ");
-        int n3 = in.nextInt();
-
-        System.out.print("Numero 4: ");
-        int n4 = in.nextInt();
-
-        System.out.print("Numero 5: ");
-        int n5 = in.nextInt();
-
-
-
+            if (n > maior) {
+                maior = n;
+            }
+            if (n < menor) {
+                menor = n;
+            }
+        }
 
 
-
-
-
-        String resultado = "Código não implementado";
+        String resultado = "Maior valor:" + maior + "| Menor Valor:" + menor;
         return resultado;
     }
 }
