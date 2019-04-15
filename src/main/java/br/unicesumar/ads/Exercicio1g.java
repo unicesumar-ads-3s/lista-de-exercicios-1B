@@ -3,17 +3,31 @@ package br.unicesumar.ads;
 import java.util.Scanner;
 
 public class Exercicio1g implements InterfaceExercicio {
+   static double volume;
+    static double raio;
+    static double area;
+    static double tt = 3.141592653589793;
+    Scanner scanf = new Scanner(System.in);
+    
+    
+    
+    
+    
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+        System.out.println("Digite o Raio do galão: ");
+         this.raio = scanf.nextDouble();
+             
+         
+        System.out.println("Digite a Area do galão: ");
+        this.area = scanf.nextDouble();
+        
+        
+        this.volume = (tt * this.raio *2 *this.area);
 
 
 
-
-        String resultado = "Código não implementado";
+        String resultado = "Volume total deste galão é de: "+this.volume; 
         return resultado;
     }
 }

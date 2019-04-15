@@ -15,7 +15,7 @@ public class ListaExercicio
     {
         List<InterfaceExercicio> ListaExercicios = new ArrayList<InterfaceExercicio>();
 
-        ListaExercicios.add(new ExercicioExemplo());
+        //ListaExercicios.add(new ExercicioExemplo());
 
         ListaExercicios.add(new Exercicio1a());
         ListaExercicios.add(new Exercicio1b());
