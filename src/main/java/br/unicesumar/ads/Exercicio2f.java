@@ -1,17 +1,25 @@
 package br.unicesumar.ads;
 
+import java.util.Scanner;
+
 public class Exercicio2f implements InterfaceExercicio {
-    @Override
+
+    int value;
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+        Scanner scann = new Scanner(System.in);
+        String result;
 
 
-
-
-        String resultado = "Código não implementado";
-        return resultado;
+        for(int i=0; 1<=4; i++){
+            result = "";
+            System.out.println("escolha o valor");
+            value = scann.nextInt();
+            if ( value%2 ==0 || value%3 ==0 ) {
+                result = value + " é divisivel por 2 ou 3";
+            }else{
+                result = value + " nao é divisivel por 2 ou 3";
+            }
+            return result;
+        }
     }
 }
