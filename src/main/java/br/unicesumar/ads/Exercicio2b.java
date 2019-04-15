@@ -5,15 +5,18 @@ import java.util.Scanner;
 public class Exercicio2b implements InterfaceExercicio {
     @Override
     public String run() {
-        // Aqui vai a implementação do exercicio
-        // O método deve retornar uma string
-        // Caso o resultado seja um valor numérico, o valor deve
-        // ser convertido em String.
+        int n = 0;
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite um numero positivo ou negativo: ");
+        n= ler.nextInt();
+        if(n<0){
+        n = n*-1;
+        }
+        
 
 
 
-
-        String resultado = "Código não implementado";
+        String resultado = "resultado " + n;
         return resultado;
     }
 }
