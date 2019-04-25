@@ -13,7 +13,7 @@ public class Exercicio1f implements InterfaceExercicio {
 
 
 
-        String resultado = "Exercicio em branco";
+        String resultado = "Código não implementado";
         return resultado;
     }
 }
